@@ -1,0 +1,3 @@
+PODS_PAYPAL_IOS_SDK_HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2
+PODS_PAYPAL_IOS_SDK_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/PayPal-iOS-SDK/PayPalMobile/"
+PODS_PAYPAL_IOS_SDK_OTHER_LDFLAGS = -ObjC -lPayPalMobile -lc++ -lstdc++ -lxml2 -framework AVFoundation -framework AudioToolbox -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework Security -framework UIKit
