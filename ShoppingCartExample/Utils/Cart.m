@@ -140,7 +140,7 @@
 
 + (BOOL)isEmpty
 {
-    return [self totalProducts] > 0;
+    return [self totalProducts] == 0;
 }
 
 + (BOOL)clearCart
