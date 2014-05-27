@@ -17,6 +17,7 @@
 -(void) createAndCheckDatabase;
 -(BOOL) addSkipBackupAttributeToItemAtURL;
 
+-(void) setupTabBarItems;
 -(void) updateCartTabBadge;
 
 @end

@@ -25,10 +25,14 @@
     // Override point for customization after application launch.
     UINavigationController *productsViewController = [[UINavigationController alloc]
             initWithRootViewController:[[ProductsViewController alloc] init]];
-    NSArray *tabControllers = [NSArray arrayWithObjects:productsViewController, nil];
+    UINavigationController *cartViewController = [[UINavigationController alloc]
+            initWithRootViewController:[[ProductsViewController alloc] init]];
+    NSArray *tabControllers = [NSArray arrayWithObjects:productsViewController, cartViewController, nil];
 
     self.tabBarController = [[UITabBarController alloc]init];
     self.tabBarController.viewControllers = tabControllers;
+
+    [self setupTabBarItems];
     [self.tabBarController setSelectedIndex:0];
 
     self.window.rootViewController = self.tabBarController;
@@ -101,10 +105,26 @@
     return success;
 }
 
+#pragma mark TabBar customization
+
+- (void)setupTabBarItems
+{
+    UITabBarItem *productsTab = [self.tabBarController.tabBar.items objectAtIndex:0];
+    UITabBarItem *cartTab = [self.tabBarController.tabBar.items objectAtIndex:1];
+
+    productsTab.title = @"Products";
+    productsTab.tag = 1;
+    productsTab.image = [UIImage imageNamed:@"filled_box.png"];
+
+    cartTab.title = @"Cart";
+    cartTab.tag = 2;
+    cartTab.image = [UIImage imageNamed:@"shopping_cart_empty.png"];
+}
+
 - (void)updateCartTabBadge
 {
     int total = [Cart totalProducts];
-    UITabBarItem *cartTab = [self.tabBarController.tabBar.items objectAtIndex:0];
+    UITabBarItem *cartTab = [self.tabBarController.tabBar.items objectAtIndex:1];
 
     if(total == 0)
         cartTab.badgeValue = nil;
