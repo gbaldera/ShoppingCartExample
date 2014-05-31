@@ -24,9 +24,9 @@
 
     // Override point for customization after application launch.
     UINavigationController *productsViewController = [[UINavigationController alloc]
-            initWithRootViewController:[[ProductsViewController alloc] init]];
+            initWithRootViewController:[[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil]];
     UINavigationController *cartViewController = [[UINavigationController alloc]
-            initWithRootViewController:[[ProductsViewController alloc] init]];
+            initWithRootViewController:[[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil]];
     NSArray *tabControllers = [NSArray arrayWithObjects:productsViewController, cartViewController, nil];
 
     self.tabBarController = [[UITabBarController alloc]init];
