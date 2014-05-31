@@ -35,18 +35,12 @@
 {
     int total = 0;
 
-    FMDatabase *db = [FMDatabase databaseWithPath:[Db getDatabasePath]];
+    NSMutableArray *contents = [self contents];
 
-    [db open];
-
-    FMResultSet *results = [db executeQuery:@"SELECT COUNT(productid) AS total FROM cart"];
-
-    while([results next])
+    for(CartItem *item in contents)
     {
-        total = [results intForColumn:@"total"];
+        total += item.quantity;
     }
-
-    [db close];
 
     return total;
 }
@@ -99,8 +93,7 @@
         product.image = [results stringForColumn:@"image"];
         product.price = [results doubleForColumn:@"price"];
 
-        item.product = product;
-        item.quantity = [results intForColumn:@"quantity"];
+        item = [[CartItem alloc] initWithProduct:product andQuantity:[results intForColumn:@"quantity"]];
     }
 
     [db close];

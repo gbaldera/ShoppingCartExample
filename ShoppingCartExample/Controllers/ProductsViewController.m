@@ -11,6 +11,7 @@
 #import "ProductCell.h"
 #import "Cart.h"
 #import "AppDelegate.h"
+#import "CheckoutHeaderview.h"
 
 @interface ProductsViewController ()
 
@@ -92,6 +93,29 @@
     cell.addToCartButton.tag = [indexPath row];
 
     return cell;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CheckoutHeaderView" owner:self options:nil];
+    CheckoutHeaderview *checkoutHeaderview = [nib objectAtIndex:0];
+
+    checkoutHeaderview.subtotal.text = [NSString stringWithFormat:@"Subtotal (%d):", [Cart totalProducts]];
+
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setMaximumFractionDigits:2];
+    [formatter setRoundingMode: NSNumberFormatterRoundDown];
+    checkoutHeaderview.total.text = [NSString stringWithFormat:@"$%@", [formatter stringFromNumber:[NSNumber numberWithDouble:[Cart totalAmount]]]];
+
+    [checkoutHeaderview.checkoutButton setStyle:BButtonStyleBootstrapV3];
+    [checkoutHeaderview.checkoutButton setType:BButtonTypeWarning];
+
+    return checkoutHeaderview;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 70.0f;
 }
 
 - (void)loadProducts

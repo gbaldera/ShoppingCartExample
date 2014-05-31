@@ -7,7 +7,7 @@
 
 
 @interface CartItem : NSObject
-@property (weak, nonatomic) Product *product;
+@property (strong, nonatomic) Product *product;
 @property (assign, nonatomic) int quantity;
 
 - (id)initWithProduct:(Product *)product;
