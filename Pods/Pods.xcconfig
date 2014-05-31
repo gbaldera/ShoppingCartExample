@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/PayPal-iOS-SDK" $(SDKROOT)/usr/include/libxml2
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/BButton" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/PayPal-iOS-SDK" $(SDKROOT)/usr/include/libxml2
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/PayPal-iOS-SDK/PayPalMobile/"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/FMDB" -isystem "${PODS_ROOT}/Headers/PayPal-iOS-SDK"
-OTHER_LDFLAGS = -ObjC  -ObjC -lPayPalMobile -lc++ -lsqlite3 -lstdc++ -lxml2 -framework AVFoundation -framework AudioToolbox -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework Security -framework UIKit
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/BButton" -isystem "${PODS_ROOT}/Headers/FMDB" -isystem "${PODS_ROOT}/Headers/PayPal-iOS-SDK"
+OTHER_LDFLAGS = -ObjC  -ObjC -lPayPalMobile -lc++ -lsqlite3 -lstdc++ -lxml2 -framework AVFoundation -framework AudioToolbox -framework CoreGraphics -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework Security -framework UIKit
 PODS_ROOT = ${SRCROOT}/Pods

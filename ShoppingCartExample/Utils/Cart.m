@@ -88,7 +88,7 @@
 
     [db open];
 
-    FMResultSet *results = [db executeQuery:@"SELECT p.*, c.quantity FROM products p JOIN cart c ON p.id = c.productid where p.id = ?", productid, nil];
+    FMResultSet *results = [db executeQuery:[NSString stringWithFormat:@"SELECT p.*, c.quantity FROM products p JOIN cart c ON p.id = c.productid where p.id = %d", productid]];
 
     while([results next])
     {
@@ -118,7 +118,7 @@
 
     @try
     {
-        success = [db executeUpdate:@"DELETE FROM cart where productid = ?", product.id, nil];
+        success = [db executeUpdate:[NSString stringWithFormat:@"DELETE FROM cart where productid = %d", product.id]];
     }
     @catch (NSException *exception)
     {
@@ -182,8 +182,8 @@
     {
         CartItem *item = [self getProduct:product.id];
         success = item ?
-                [db executeUpdate:@"UPDATE cart set quantity = ? where productid = ?", quantity + item.quantity, product.id, nil] :
-                [db executeUpdate:@"INSERT INTO cart (productid,quantity) VALUES (?,?)", product.id, quantity, nil];
+                [db executeUpdate:[NSString stringWithFormat:@"UPDATE cart set quantity = %d where productid = %d", quantity + item.quantity, product.id]] :
+                [db executeUpdate:[NSString stringWithFormat:@"INSERT INTO cart (productid,quantity) VALUES (%d,%d)", product.id, quantity]];
     }
     @catch (NSException *exception)
     {

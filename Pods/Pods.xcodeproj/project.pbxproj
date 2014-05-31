@@ -7,330 +7,418 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04FDDB7764E741EBB9C3B79D /* PayPalPaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6534233C04634629956FF0B5 /* PayPalPaymentViewController.h */; };
-		3424C08CD0A74E9186B2A363 /* PayPalConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F853E1A5000C476CAF0FC463 /* PayPalConfiguration.h */; };
-		3459C04C625C4DE8B2AFE19A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B0195D22BB453A9F81D5A9 /* Security.framework */; };
-		3610B70BDC084FF0A0AA2287 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E7CCFD81694CBDB5D4F7FA /* Pods-dummy.m */; };
-		3857880DEB3C437E8F34BCA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB50E921D8A4B0DBFEA938A /* Foundation.framework */; };
-		389F5DABF99B42FDB7129CDB /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 267EF7259E1D44AF87E92997 /* FMResultSet.h */; };
-		4146F265293047ADA08042FB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955A4A262F6D4CD49F521C28 /* MessageUI.framework */; };
-		45EBB1002696443BAF54DD66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E23F1342FA4C709A8FBC37 /* UIKit.framework */; };
-		47D2A304C53948F89B9EC3EC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBABC5949144077A55E43F0 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		4C4499CC46F7421E92403AFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE47F8B51E740F9B5DEE8EA /* QuartzCore.framework */; };
-		5324AF88EBF04BF2B621F0C1 /* Pods-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E08688839C4C3589542D2B /* Pods-FMDB-dummy.m */; };
-		5E369DA6846443BBA33B60C3 /* Pods-PayPal-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AB9C324CF4F6A836CFE57 /* Pods-PayPal-iOS-SDK-dummy.m */; };
-		6156B4678E8C4562A2C65E09 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5963273C4841C59862B869 /* FMDatabaseQueue.h */; };
-		6BA5D4DDD2EA4ED0B32D7D12 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D84C870AC4FF3BBE9D5CA /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		6D190327F3444E3698C735FC /* PayPalMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5E8713FD0B49488DED5A4E /* PayPalMobile.h */; };
-		7E92CCFD8B9D473E932BE7C7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EA747861CBF44AB0A1F685D7 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		86AA8DC587364580AEE9A32C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76368B24FF648378E406311 /* MobileCoreServices.framework */; };
-		8E3764AA88AD49D888B720C2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA176F3E80F14AC9BC5CDF40 /* AudioToolbox.framework */; };
-		95C99BE96FCF4EDCAA77D7C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28492E5CAEA844BD816EDC55 /* CoreLocation.framework */; };
-		97833E5A183A4335B237576A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA779EC59B74471B7EEE676 /* OpenGLES.framework */; };
-		A3B65C5785684D179A0CE583 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 12673F4A1B22457091FFF9BB /* FMDatabaseAdditions.h */; };
-		A3DD82F79A264874BCD4DB76 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED8F040538446C79234D830 /* FMDatabasePool.h */; };
-		AC3614E7605040778C7A1D94 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378624C4CA484C68A2C1A5BB /* CoreMedia.framework */; };
-		B0503D63307B420E81D81EB9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 744090701E0C4EB0BC5BF343 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		B8FA530AF9564CF6BA1812DF /* libPods-FMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7FD08824A479896F0A137 /* libPods-FMDB.a */; };
-		BEB05EDE621A4D31B8F32FCC /* libPods-PayPal-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6FE3479B324DA59534732A /* libPods-PayPal-iOS-SDK.a */; };
-		D1A1C5F90C1B45DFB56F1188 /* PayPalFuturePaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FD49AC54494C98B0646B01 /* PayPalFuturePaymentViewController.h */; };
-		D9DCB56AFC75485182208D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB50E921D8A4B0DBFEA938A /* Foundation.framework */; };
-		DAE451C3E7E248BB9BA6DD3E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B603CC0CE4D6F983D76E5 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		E00F44A8F9C84D32AE334E9D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A391FA3FFA44464991180B8B /* FMDatabase.h */; };
-		E5A96F79E4434B67B456637D /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCBB32FFA3B46E2ADFF3D3A /* FMDB.h */; };
-		E853D69A07D14C6F812EDB40 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E54BF8B0C7484B9ED74707 /* CoreVideo.framework */; };
-		EF242BCA37A84C3B85E0F77E /* PayPalPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = F1DAE443E90A49A7927E8883 /* PayPalPayment.h */; };
-		F1E626A57C6E45A1AE083B23 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3048C05973407CAD00F209 /* AVFoundation.framework */; };
-		FFB7436554314BE6BBC3F864 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB50E921D8A4B0DBFEA938A /* Foundation.framework */; };
+		0427885F2E9A4D24A132A05E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DCDB5F5174EE080CA3ECA /* Security.framework */; };
+		067C12BC12C14022AD000247 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B0DAEE6094E33949AF97C /* MobileCoreServices.framework */; };
+		145BCD34499648CC8C174F77 /* BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 90294A1CC1BF4EAE8E3D8791 /* BButton.h */; };
+		14614E86FDF4441B8BFE6DF0 /* libPods-FMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A747CE92944FADB804D842 /* libPods-FMDB.a */; };
+		1D795C44E5B542BDBA65165A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D686490D74D788F694202 /* Foundation.framework */; };
+		1DB4F7054986427A9D02797D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01DCC8902214AF087493F23 /* AVFoundation.framework */; };
+		21783D8FA4044901AD109057 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1E4C6A953E49828BD9DC9F /* FMResultSet.h */; };
+		223D4DFF8695406992E485EF /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D648F49AC82C474BB5CEA0C9 /* FMDatabaseQueue.h */; };
+		26FCFB9DF1774FE7A7A19BA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B9E0E46B1A4622807C23BC /* CoreGraphics.framework */; };
+		2B2D6802E10D402A82F9C118 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642091AAFE5432FA29A6625 /* UIColor+BButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		32F2C9F296AF4860B6BD43EB /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2718DA9CEB0145D7AD231556 /* FMDatabasePool.h */; };
+		3676F794E1034497A220109C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CC05F19A734B9B8F3C58E5 /* AudioToolbox.framework */; };
+		3CBC3C3074C14C899CA271CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4311E97D984D37A187F6E9 /* CoreLocation.framework */; };
+		3EFC8B3EA11A4B4EA2E4417F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D686490D74D788F694202 /* Foundation.framework */; };
+		43C66048948C4A1CB0409BC6 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 519AED3093E34966B687D768 /* FMDatabase.h */; };
+		5ACD1D8361634796BEAF8EB9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A60A7B95A7994264A01B420E /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5B38FBA7AD8C43ECA011F418 /* NSString+FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 89ED671D28A24025B90C3A4F /* NSString+FontAwesome.h */; };
+		622C406D5E134139927B60AE /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A98548372B47798046B984 /* BButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6E782B4967D2438A8DC277A0 /* PayPalMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6ED251B69B4CA5931A0E54 /* PayPalMobile.h */; };
+		77166585448D418B87915EBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B858C0920CFC4760B2DB1367 /* QuartzCore.framework */; };
+		7C18355607EF42D4ABE18699 /* PayPalFuturePaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A0A8ED50064E7AB2EBF792 /* PayPalFuturePaymentViewController.h */; };
+		83B50CFA1B9C43B6B352F207 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DD52754A6840908394EEFA /* CoreMedia.framework */; };
+		8534DB5D867C4FCC92F948B7 /* Pods-PayPal-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D1DA9E1A64F989352F7BB /* Pods-PayPal-iOS-SDK-dummy.m */; };
+		8687BF02A1CC4195ABC8DDFF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85003CBDD867435180495C1F /* MessageUI.framework */; };
+		8B9566BBE69C4934BA8C30F0 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C1091EA16EBF4452AF3BA951 /* NSString+FontAwesome.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		8D68E4EC0C734E6CAC5691D3 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C6A893104A4DBC8030EC49 /* Pods-dummy.m */; };
+		9A1948B9783242C683750EBB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD71819C69542E992916E25 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9E822614DE7649C7AAE05B72 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5B3E19F6D440A08D71FC5C /* OpenGLES.framework */; };
+		A163F2E7A0BB4590BFE51026 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB5BB68C6354DA09BD41217 /* CoreVideo.framework */; };
+		A2F1ADDA47A244FDA8559460 /* libPods-BButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2788504639694ABF80D0799C /* libPods-BButton.a */; };
+		A5D332AF977241E88A9012E3 /* PayPalPaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 223B5FB7B69F4797BB07F579 /* PayPalPaymentViewController.h */; };
+		AB58A2E8A33D427499925D0C /* PayPalConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 511202D3B2194207AE7FB707 /* PayPalConfiguration.h */; };
+		B376A0CC5A1E4C51B0292739 /* Pods-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C92512BCDB08477388C4CF69 /* Pods-FMDB-dummy.m */; };
+		B3EB9C9CC4E34F4D9EE551A3 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C02F90F3D14796B19E036E /* FMDatabaseAdditions.h */; };
+		B97B92A604314664851F5E72 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67E76873864DDDB320664D /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BDF54F5706AB4A10AF6745B1 /* UIColor+BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EE99F7F91C43C6861D15DD /* UIColor+BButton.h */; };
+		C931BFFC9B5942429F04D95A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1700CAADE9D4EEBAB7920ED /* UIKit.framework */; };
+		CCA499C807FB44BF9E940B8A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3340D56628D848A2B4DF63D0 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		CE97B5C59687442880F5FB5C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FA57504131A74331B14B1503 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D248CE495E0140D5980CBE25 /* libPods-PayPal-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E031A068EA4A0CA92CD2CF /* libPods-PayPal-iOS-SDK.a */; };
+		DC61A979880B46F99BEEA561 /* PayPalPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFE93F9ED5F4F39BAFD40DA /* PayPalPayment.h */; };
+		DFA51FB3348742A19B868EF7 /* Pods-BButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EDD7F2B784A36B61D9C27 /* Pods-BButton-dummy.m */; };
+		E6162E53144F4AD19F60B7F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D686490D74D788F694202 /* Foundation.framework */; };
+		EBA1D4EF84B94971B42D7D4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D686490D74D788F694202 /* Foundation.framework */; };
+		F21E6EA45A3442C6ABEF0106 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 362F0D598B184888A9B87CAC /* FMDB.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F0920D3B08E4B7CA8F43DFD /* PBXContainerItemProxy */ = {
+		079B70D723124F12A7455B7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0B6C1DCD429348A6818314BE /* Project object */;
+			containerPortal = 2CBFB742494A475B914223E6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 22F6C0101A2E43BBADFE2349;
+			remoteGlobalIDString = 22837A8446294AD1861E6AD8;
 			remoteInfo = "Pods-PayPal-iOS-SDK";
 		};
-		72E7AA90D8304EEE81948270 /* PBXContainerItemProxy */ = {
+		41FC9CAE3F5B4E1487498995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0B6C1DCD429348A6818314BE /* Project object */;
+			containerPortal = 2CBFB742494A475B914223E6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4E2099067F52441380322DC4;
+			remoteGlobalIDString = 68811A9029B941AAA94588F8;
+			remoteInfo = "Pods-BButton";
+		};
+		AC9D4D3AC9D641AABD475E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CBFB742494A475B914223E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A73B2495EC1A40559E84E4F4;
 			remoteInfo = "Pods-FMDB";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12673F4A1B22457091FFF9BB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		13330F13D4C44798835284D3 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		17B38E3D136F464990DC5DEC /* Pods-PayPal-iOS-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayPal-iOS-SDK-Private.xcconfig"; sourceTree = "<group>"; };
-		1BE47F8B51E740F9B5DEE8EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		1CA779EC59B74471B7EEE676 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
-		23FD49AC54494C98B0646B01 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalFuturePaymentViewController.h; path = PayPalMobile/PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
-		267EF7259E1D44AF87E92997 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		28492E5CAEA844BD816EDC55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		2CCBB32FFA3B46E2ADFF3D3A /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		2F5963273C4841C59862B869 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		32F7D9BC523846519CBBD2EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		378624C4CA484C68A2C1A5BB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
-		389B2DB942774989996FED67 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		3EBABC5949144077A55E43F0 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		44B0195D22BB453A9F81D5A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		4ED8F040538446C79234D830 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		51E23F1342FA4C709A8FBC37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		52E08688839C4C3589542D2B /* Pods-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FMDB-dummy.m"; sourceTree = "<group>"; };
-		54CD78CC42504C0D9D591008 /* Pods-PayPal-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayPal-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
-		59CE615245004EA88A445688 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
-		6534233C04634629956FF0B5 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPaymentViewController.h; path = PayPalMobile/PayPalPaymentViewController.h; sourceTree = "<group>"; };
-		69E7CCFD81694CBDB5D4F7FA /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		6C1D84C870AC4FF3BBE9D5CA /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		744090701E0C4EB0BC5BF343 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		7E6FE3479B324DA59534732A /* libPods-PayPal-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PayPal-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FD7FD08824A479896F0A137 /* libPods-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91E54BF8B0C7484B9ED74707 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
-		955A4A262F6D4CD49F521C28 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
-		9F9B603CC0CE4D6F983D76E5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		A14D13F14BA54C38925446DC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		A391FA3FFA44464991180B8B /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		AB3048C05973407CAD00F209 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		B763A0F77B6444988985B16D /* Pods-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
-		BBB50E921D8A4B0DBFEA938A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CD8E177A6B724BA6949E55DF /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		CE58D34D65304628B89BD04F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D76368B24FF648378E406311 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		D7AF861EC6734A3AB4DADE2F /* Pods-PayPal-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayPal-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
-		D817746C9DDF47A68F9E5BAF /* Pods-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FMDB.xcconfig"; sourceTree = "<group>"; };
-		EA747861CBF44AB0A1F685D7 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		EC9322B40AED4FD2B0D5D94D /* Pods-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FMDB-prefix.pch"; sourceTree = "<group>"; };
-		F1DAE443E90A49A7927E8883 /* PayPalPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = PayPalMobile/PayPalPayment.h; sourceTree = "<group>"; };
-		F70AB9C324CF4F6A836CFE57 /* Pods-PayPal-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayPal-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
-		F853E1A5000C476CAF0FC463 /* PayPalConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
-		FA176F3E80F14AC9BC5CDF40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		FA5E8713FD0B49488DED5A4E /* PayPalMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalMobile.h; path = PayPalMobile/PayPalMobile.h; sourceTree = "<group>"; };
+		0A4EDD7F2B784A36B61D9C27 /* Pods-BButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BButton-dummy.m"; sourceTree = "<group>"; };
+		0CB5BB68C6354DA09BD41217 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		0F7DCDB5F5174EE080CA3ECA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		21D355A0E2384B32A2CABEDF /* Pods-BButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BButton-Private.xcconfig"; sourceTree = "<group>"; };
+		223B5FB7B69F4797BB07F579 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPaymentViewController.h; path = PayPalMobile/PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		2718DA9CEB0145D7AD231556 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		2788504639694ABF80D0799C /* libPods-BButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B7555D885647CD977A4189 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = BButton/resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		28E031A068EA4A0CA92CD2CF /* libPods-PayPal-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PayPal-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3340D56628D848A2B4DF63D0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		34DAEE52828A4AF2A65902E7 /* Pods-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FMDB.xcconfig"; sourceTree = "<group>"; };
+		362F0D598B184888A9B87CAC /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		4642091AAFE5432FA29A6625 /* UIColor+BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BButton.m"; path = "BButton/Classes/UIColor+BButton.m"; sourceTree = "<group>"; };
+		48A747CE92944FADB804D842 /* libPods-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1B0DAEE6094E33949AF97C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		4D5B3E19F6D440A08D71FC5C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		4ECF3EF67DE740DCB0D71325 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		511202D3B2194207AE7FB707 /* PayPalConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalConfiguration.h; path = PayPalMobile/PayPalConfiguration.h; sourceTree = "<group>"; };
+		519AED3093E34966B687D768 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		5A4311E97D984D37A187F6E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		5D1E4C6A953E49828BD9DC9F /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		78CC05F19A734B9B8F3C58E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		7C5D686490D74D788F694202 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E6D1DA9E1A64F989352F7BB /* Pods-PayPal-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayPal-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		7F41BFDEE2BF48A1956C21EC /* Pods-PayPal-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayPal-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		85003CBDD867435180495C1F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		89ED671D28A24025B90C3A4F /* NSString+FontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "BButton/Classes/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		90294A1CC1BF4EAE8E3D8791 /* BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BButton.h; path = BButton/Classes/BButton.h; sourceTree = "<group>"; };
+		9377D236FF8B46C7AED6CD90 /* Pods-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FMDB-prefix.pch"; sourceTree = "<group>"; };
+		937BEBD03C65444A87C190CF /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		939E0661833042B4BBC13971 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0A98548372B47798046B984 /* BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BButton.m; path = BButton/Classes/BButton.m; sourceTree = "<group>"; };
+		A2C02F90F3D14796B19E036E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A60A7B95A7994264A01B420E /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		AAB4D168F30042FE935F32A5 /* Pods-BButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BButton.xcconfig"; sourceTree = "<group>"; };
+		ABFE93F9ED5F4F39BAFD40DA /* PayPalPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalPayment.h; path = PayPalMobile/PayPalPayment.h; sourceTree = "<group>"; };
+		AF30845780974AD0BA72205B /* Pods-BButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BButton-prefix.pch"; sourceTree = "<group>"; };
+		AF43CDAC5434418380ACF1CC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B2DD52754A6840908394EEFA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		B4C6A893104A4DBC8030EC49 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		B7374DC1638243609629F17F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		B858C0920CFC4760B2DB1367 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B9EE99F7F91C43C6861D15DD /* UIColor+BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BButton.h"; path = "BButton/Classes/UIColor+BButton.h"; sourceTree = "<group>"; };
+		BF6ED251B69B4CA5931A0E54 /* PayPalMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalMobile.h; path = PayPalMobile/PayPalMobile.h; sourceTree = "<group>"; };
+		C1091EA16EBF4452AF3BA951 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "BButton/Classes/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		C92512BCDB08477388C4CF69 /* Pods-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FMDB-dummy.m"; sourceTree = "<group>"; };
+		CA5D3DA25D5649B4B011267C /* Pods-PayPal-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayPal-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		CD67E76873864DDDB320664D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D1700CAADE9D4EEBAB7920ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D648F49AC82C474BB5CEA0C9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D9A0A8ED50064E7AB2EBF792 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayPalFuturePaymentViewController.h; path = PayPalMobile/PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		DC8311E8514C4F5D84290BCC /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E01DCC8902214AF087493F23 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		E5742B02939348049E692F16 /* Pods-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
+		E6EF876371A744ECB6782146 /* Pods-PayPal-iOS-SDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayPal-iOS-SDK-Private.xcconfig"; sourceTree = "<group>"; };
+		E7B9E0E46B1A4622807C23BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		EB3B7158005B4E1289B33390 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD71819C69542E992916E25 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		FA57504131A74331B14B1503 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14363FE015D54233B5846EAB /* Frameworks */ = {
+		06988154DB1342528DE60361 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E626A57C6E45A1AE083B23 /* AVFoundation.framework in Frameworks */,
-				8E3764AA88AD49D888B720C2 /* AudioToolbox.framework in Frameworks */,
-				95C99BE96FCF4EDCAA77D7C6 /* CoreLocation.framework in Frameworks */,
-				AC3614E7605040778C7A1D94 /* CoreMedia.framework in Frameworks */,
-				E853D69A07D14C6F812EDB40 /* CoreVideo.framework in Frameworks */,
-				3857880DEB3C437E8F34BCA4 /* Foundation.framework in Frameworks */,
-				4146F265293047ADA08042FB /* MessageUI.framework in Frameworks */,
-				86AA8DC587364580AEE9A32C /* MobileCoreServices.framework in Frameworks */,
-				97833E5A183A4335B237576A /* OpenGLES.framework in Frameworks */,
-				4C4499CC46F7421E92403AFC /* QuartzCore.framework in Frameworks */,
-				3459C04C625C4DE8B2AFE19A /* Security.framework in Frameworks */,
-				45EBB1002696443BAF54DD66 /* UIKit.framework in Frameworks */,
+				EBA1D4EF84B94971B42D7D4C /* Foundation.framework in Frameworks */,
+				A2F1ADDA47A244FDA8559460 /* libPods-BButton.a in Frameworks */,
+				14614E86FDF4441B8BFE6DF0 /* libPods-FMDB.a in Frameworks */,
+				D248CE495E0140D5980CBE25 /* libPods-PayPal-iOS-SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B6C1895801A4CAFB89554ED /* Frameworks */ = {
+		079F027569054645B79A43DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB7436554314BE6BBC3F864 /* Foundation.framework in Frameworks */,
+				3EFC8B3EA11A4B4EA2E4417F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1CE90056BF5445088453191 /* Frameworks */ = {
+		2B8A59463CD0406F8EA79D1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DCB56AFC75485182208D99 /* Foundation.framework in Frameworks */,
-				B8FA530AF9564CF6BA1812DF /* libPods-FMDB.a in Frameworks */,
-				BEB05EDE621A4D31B8F32FCC /* libPods-PayPal-iOS-SDK.a in Frameworks */,
+				26FCFB9DF1774FE7A7A19BA8 /* CoreGraphics.framework in Frameworks */,
+				1D795C44E5B542BDBA65165A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD08A0D90555461F8E36B3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB4F7054986427A9D02797D /* AVFoundation.framework in Frameworks */,
+				3676F794E1034497A220109C /* AudioToolbox.framework in Frameworks */,
+				3CBC3C3074C14C899CA271CC /* CoreLocation.framework in Frameworks */,
+				83B50CFA1B9C43B6B352F207 /* CoreMedia.framework in Frameworks */,
+				A163F2E7A0BB4590BFE51026 /* CoreVideo.framework in Frameworks */,
+				E6162E53144F4AD19F60B7F8 /* Foundation.framework in Frameworks */,
+				8687BF02A1CC4195ABC8DDFF /* MessageUI.framework in Frameworks */,
+				067C12BC12C14022AD000247 /* MobileCoreServices.framework in Frameworks */,
+				9E822614DE7649C7AAE05B72 /* OpenGLES.framework in Frameworks */,
+				77166585448D418B87915EBD /* QuartzCore.framework in Frameworks */,
+				0427885F2E9A4D24A132A05E /* Security.framework in Frameworks */,
+				C931BFFC9B5942429F04D95A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F4FE3E7CAE74EC08D1020D0 /* Support Files */ = {
+		3A193384748040928019C1C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D817746C9DDF47A68F9E5BAF /* Pods-FMDB.xcconfig */,
-				B763A0F77B6444988985B16D /* Pods-FMDB-Private.xcconfig */,
-				52E08688839C4C3589542D2B /* Pods-FMDB-dummy.m */,
-				EC9322B40AED4FD2B0D5D94D /* Pods-FMDB-prefix.pch */,
+				EB3B7158005B4E1289B33390 /* libPods.a */,
+				2788504639694ABF80D0799C /* libPods-BButton.a */,
+				48A747CE92944FADB804D842 /* libPods-FMDB.a */,
+				28E031A068EA4A0CA92CD2CF /* libPods-PayPal-iOS-SDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F3E4E21B31B40E087D9F04C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34DAEE52828A4AF2A65902E7 /* Pods-FMDB.xcconfig */,
+				E5742B02939348049E692F16 /* Pods-FMDB-Private.xcconfig */,
+				C92512BCDB08477388C4CF69 /* Pods-FMDB-dummy.m */,
+				9377D236FF8B46C7AED6CD90 /* Pods-FMDB-prefix.pch */,
 			);
 			name = "Support Files";
 			sourceTree = SOURCE_ROOT;
 		};
-		13497F70F60347CF93CC5AB4 /* Support Files */ = {
+		4283B7491F304D3CB8345BC9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D7AF861EC6734A3AB4DADE2F /* Pods-PayPal-iOS-SDK.xcconfig */,
-				17B38E3D136F464990DC5DEC /* Pods-PayPal-iOS-SDK-Private.xcconfig */,
-				F70AB9C324CF4F6A836CFE57 /* Pods-PayPal-iOS-SDK-dummy.m */,
-				54CD78CC42504C0D9D591008 /* Pods-PayPal-iOS-SDK-prefix.pch */,
+				AAB4D168F30042FE935F32A5 /* Pods-BButton.xcconfig */,
+				21D355A0E2384B32A2CABEDF /* Pods-BButton-Private.xcconfig */,
+				0A4EDD7F2B784A36B61D9C27 /* Pods-BButton-dummy.m */,
+				AF30845780974AD0BA72205B /* Pods-BButton-prefix.pch */,
 			);
 			name = "Support Files";
 			sourceTree = SOURCE_ROOT;
 		};
-		3230986DDA16475093579722 /* PayPal-iOS-SDK */ = {
+		4B692E1599CD49E9B3F58699 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F853E1A5000C476CAF0FC463 /* PayPalConfiguration.h */,
-				23FD49AC54494C98B0646B01 /* PayPalFuturePaymentViewController.h */,
-				FA5E8713FD0B49488DED5A4E /* PayPalMobile.h */,
-				F1DAE443E90A49A7927E8883 /* PayPalPayment.h */,
-				6534233C04634629956FF0B5 /* PayPalPaymentViewController.h */,
-				13497F70F60347CF93CC5AB4 /* Support Files */,
+				E75725A551EF4B078F129834 /* BButton */,
+				A576B2FEFEA141CCA8BF182A /* FMDB */,
+				A19E6BAB358F470DAC51EE6C /* PayPal-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C46F9A9584E420F813807B6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				362F0D598B184888A9B87CAC /* FMDB.h */,
+				519AED3093E34966B687D768 /* FMDatabase.h */,
+				A60A7B95A7994264A01B420E /* FMDatabase.m */,
+				A2C02F90F3D14796B19E036E /* FMDatabaseAdditions.h */,
+				CD67E76873864DDDB320664D /* FMDatabaseAdditions.m */,
+				2718DA9CEB0145D7AD231556 /* FMDatabasePool.h */,
+				FA57504131A74331B14B1503 /* FMDatabasePool.m */,
+				D648F49AC82C474BB5CEA0C9 /* FMDatabaseQueue.h */,
+				3340D56628D848A2B4DF63D0 /* FMDatabaseQueue.m */,
+				5D1E4C6A953E49828BD9DC9F /* FMResultSet.h */,
+				EFD71819C69542E992916E25 /* FMResultSet.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		4D39219094634D8D879062DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1EB76581704411AB4F3A35A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FCDC86AADBC448FA22080B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ECF3EF67DE740DCB0D71325 /* Pods.xcconfig */,
+				AF43CDAC5434418380ACF1CC /* Pods-acknowledgements.markdown */,
+				939E0661833042B4BBC13971 /* Pods-acknowledgements.plist */,
+				B4C6A893104A4DBC8030EC49 /* Pods-dummy.m */,
+				B7374DC1638243609629F17F /* Pods-environment.h */,
+				937BEBD03C65444A87C190CF /* Pods-resources.sh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		611F5CE4D6DF45D68EF38CB4 = {
+			isa = PBXGroup;
+			children = (
+				DC8311E8514C4F5D84290BCC /* Podfile */,
+				4D39219094634D8D879062DB /* Frameworks */,
+				4B692E1599CD49E9B3F58699 /* Pods */,
+				3A193384748040928019C1C8 /* Products */,
+				C8089C6A4AF04F869E910F30 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A19E6BAB358F470DAC51EE6C /* PayPal-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				511202D3B2194207AE7FB707 /* PayPalConfiguration.h */,
+				D9A0A8ED50064E7AB2EBF792 /* PayPalFuturePaymentViewController.h */,
+				BF6ED251B69B4CA5931A0E54 /* PayPalMobile.h */,
+				ABFE93F9ED5F4F39BAFD40DA /* PayPalPayment.h */,
+				223B5FB7B69F4797BB07F579 /* PayPalPaymentViewController.h */,
+				F3916C3CCBB6400F89427300 /* Support Files */,
 			);
 			name = "PayPal-iOS-SDK";
 			path = "PayPal-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		370FCA13BE4B461696A86CEC /* Pods */ = {
+		A576B2FEFEA141CCA8BF182A /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				59CE615245004EA88A445688 /* Pods.xcconfig */,
-				13330F13D4C44798835284D3 /* Pods-acknowledgements.markdown */,
-				CD8E177A6B724BA6949E55DF /* Pods-acknowledgements.plist */,
-				69E7CCFD81694CBDB5D4F7FA /* Pods-dummy.m */,
-				389B2DB942774989996FED67 /* Pods-environment.h */,
-				A14D13F14BA54C38925446DC /* Pods-resources.sh */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		406620B5ED494D5688FDED77 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				0F4FE3E7CAE74EC08D1020D0 /* Support Files */,
-				7C4C1F9756DD48EAAF04AFAA /* common */,
+				3F3E4E21B31B40E087D9F04C /* Support Files */,
+				4C46F9A9584E420F813807B6 /* common */,
 			);
 			name = FMDB;
 			path = FMDB;
 			sourceTree = "<group>";
 		};
-		73101E01237F43189F941F58 /* Products */ = {
+		B1EB76581704411AB4F3A35A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				32F7D9BC523846519CBBD2EE /* libPods.a */,
-				8FD7FD08824A479896F0A137 /* libPods-FMDB.a */,
-				7E6FE3479B324DA59534732A /* libPods-PayPal-iOS-SDK.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		733A2558967A4F6691E6FDC0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				406620B5ED494D5688FDED77 /* FMDB */,
-				3230986DDA16475093579722 /* PayPal-iOS-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		782286377E93464EA8CBA71A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A9584F03A2A1467FABAEB92E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7C4C1F9756DD48EAAF04AFAA /* common */ = {
-			isa = PBXGroup;
-			children = (
-				2CCBB32FFA3B46E2ADFF3D3A /* FMDB.h */,
-				A391FA3FFA44464991180B8B /* FMDatabase.h */,
-				6C1D84C870AC4FF3BBE9D5CA /* FMDatabase.m */,
-				12673F4A1B22457091FFF9BB /* FMDatabaseAdditions.h */,
-				EA747861CBF44AB0A1F685D7 /* FMDatabaseAdditions.m */,
-				4ED8F040538446C79234D830 /* FMDatabasePool.h */,
-				3EBABC5949144077A55E43F0 /* FMDatabasePool.m */,
-				2F5963273C4841C59862B869 /* FMDatabaseQueue.h */,
-				9F9B603CC0CE4D6F983D76E5 /* FMDatabaseQueue.m */,
-				267EF7259E1D44AF87E92997 /* FMResultSet.h */,
-				744090701E0C4EB0BC5BF343 /* FMResultSet.m */,
-			);
-			name = common;
-			sourceTree = "<group>";
-		};
-		A9584F03A2A1467FABAEB92E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				AB3048C05973407CAD00F209 /* AVFoundation.framework */,
-				FA176F3E80F14AC9BC5CDF40 /* AudioToolbox.framework */,
-				28492E5CAEA844BD816EDC55 /* CoreLocation.framework */,
-				378624C4CA484C68A2C1A5BB /* CoreMedia.framework */,
-				91E54BF8B0C7484B9ED74707 /* CoreVideo.framework */,
-				BBB50E921D8A4B0DBFEA938A /* Foundation.framework */,
-				955A4A262F6D4CD49F521C28 /* MessageUI.framework */,
-				D76368B24FF648378E406311 /* MobileCoreServices.framework */,
-				1CA779EC59B74471B7EEE676 /* OpenGLES.framework */,
-				1BE47F8B51E740F9B5DEE8EA /* QuartzCore.framework */,
-				44B0195D22BB453A9F81D5A9 /* Security.framework */,
-				51E23F1342FA4C709A8FBC37 /* UIKit.framework */,
+				E01DCC8902214AF087493F23 /* AVFoundation.framework */,
+				78CC05F19A734B9B8F3C58E5 /* AudioToolbox.framework */,
+				E7B9E0E46B1A4622807C23BC /* CoreGraphics.framework */,
+				5A4311E97D984D37A187F6E9 /* CoreLocation.framework */,
+				B2DD52754A6840908394EEFA /* CoreMedia.framework */,
+				0CB5BB68C6354DA09BD41217 /* CoreVideo.framework */,
+				7C5D686490D74D788F694202 /* Foundation.framework */,
+				85003CBDD867435180495C1F /* MessageUI.framework */,
+				4B1B0DAEE6094E33949AF97C /* MobileCoreServices.framework */,
+				4D5B3E19F6D440A08D71FC5C /* OpenGLES.framework */,
+				B858C0920CFC4760B2DB1367 /* QuartzCore.framework */,
+				0F7DCDB5F5174EE080CA3ECA /* Security.framework */,
+				D1700CAADE9D4EEBAB7920ED /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		B94DC4AAF79443CDAF17D185 /* Targets Support Files */ = {
+		C8089C6A4AF04F869E910F30 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				370FCA13BE4B461696A86CEC /* Pods */,
+				5FCDC86AADBC448FA22080B3 /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C62E6BAAF1304F1786559B02 = {
+		E75725A551EF4B078F129834 /* BButton */ = {
 			isa = PBXGroup;
 			children = (
-				CE58D34D65304628B89BD04F /* Podfile */,
-				782286377E93464EA8CBA71A /* Frameworks */,
-				733A2558967A4F6691E6FDC0 /* Pods */,
-				73101E01237F43189F941F58 /* Products */,
-				B94DC4AAF79443CDAF17D185 /* Targets Support Files */,
+				90294A1CC1BF4EAE8E3D8791 /* BButton.h */,
+				A0A98548372B47798046B984 /* BButton.m */,
+				89ED671D28A24025B90C3A4F /* NSString+FontAwesome.h */,
+				C1091EA16EBF4452AF3BA951 /* NSString+FontAwesome.m */,
+				B9EE99F7F91C43C6861D15DD /* UIColor+BButton.h */,
+				4642091AAFE5432FA29A6625 /* UIColor+BButton.m */,
+				F85010B7E8C74D81A0A4C360 /* Resources */,
+				4283B7491F304D3CB8345BC9 /* Support Files */,
 			);
+			name = BButton;
+			path = BButton;
+			sourceTree = "<group>";
+		};
+		F3916C3CCBB6400F89427300 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA5D3DA25D5649B4B011267C /* Pods-PayPal-iOS-SDK.xcconfig */,
+				E6EF876371A744ECB6782146 /* Pods-PayPal-iOS-SDK-Private.xcconfig */,
+				7E6D1DA9E1A64F989352F7BB /* Pods-PayPal-iOS-SDK-dummy.m */,
+				7F41BFDEE2BF48A1956C21EC /* Pods-PayPal-iOS-SDK-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		F85010B7E8C74D81A0A4C360 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28B7555D885647CD977A4189 /* FontAwesome.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C44D1D8E4F864F07B7138FFC /* Headers */ = {
+		3F67917457524AE8B62B9AC6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5A96F79E4434B67B456637D /* FMDB.h in Headers */,
-				E00F44A8F9C84D32AE334E9D /* FMDatabase.h in Headers */,
-				A3B65C5785684D179A0CE583 /* FMDatabaseAdditions.h in Headers */,
-				A3DD82F79A264874BCD4DB76 /* FMDatabasePool.h in Headers */,
-				6156B4678E8C4562A2C65E09 /* FMDatabaseQueue.h in Headers */,
-				389F5DABF99B42FDB7129CDB /* FMResultSet.h in Headers */,
+				145BCD34499648CC8C174F77 /* BButton.h in Headers */,
+				5B38FBA7AD8C43ECA011F418 /* NSString+FontAwesome.h in Headers */,
+				BDF54F5706AB4A10AF6745B1 /* UIColor+BButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C745013C073D4B57A8582A25 /* Headers */ = {
+		CC46BD25143640BE92D5A2EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3424C08CD0A74E9186B2A363 /* PayPalConfiguration.h in Headers */,
-				D1A1C5F90C1B45DFB56F1188 /* PayPalFuturePaymentViewController.h in Headers */,
-				6D190327F3444E3698C735FC /* PayPalMobile.h in Headers */,
-				EF242BCA37A84C3B85E0F77E /* PayPalPayment.h in Headers */,
-				04FDDB7764E741EBB9C3B79D /* PayPalPaymentViewController.h in Headers */,
+				F21E6EA45A3442C6ABEF0106 /* FMDB.h in Headers */,
+				43C66048948C4A1CB0409BC6 /* FMDatabase.h in Headers */,
+				B3EB9C9CC4E34F4D9EE551A3 /* FMDatabaseAdditions.h in Headers */,
+				32F2C9F296AF4860B6BD43EB /* FMDatabasePool.h in Headers */,
+				223D4DFF8695406992E485EF /* FMDatabaseQueue.h in Headers */,
+				21783D8FA4044901AD109057 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2BDB8B3D4B4AA2AA407202 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB58A2E8A33D427499925D0C /* PayPalConfiguration.h in Headers */,
+				7C18355607EF42D4ABE18699 /* PayPalFuturePaymentViewController.h in Headers */,
+				6E782B4967D2438A8DC277A0 /* PayPalMobile.h in Headers */,
+				DC61A979880B46F99BEEA561 /* PayPalPayment.h in Headers */,
+				A5D332AF977241E88A9012E3 /* PayPalPaymentViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		22F6C0101A2E43BBADFE2349 /* Pods-PayPal-iOS-SDK */ = {
+		22837A8446294AD1861E6AD8 /* Pods-PayPal-iOS-SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A7C77D8FF4042438B4975C6 /* Build configuration list for PBXNativeTarget "Pods-PayPal-iOS-SDK" */;
+			buildConfigurationList = C9DA5D98134B4E6E900FF671 /* Build configuration list for PBXNativeTarget "Pods-PayPal-iOS-SDK" */;
 			buildPhases = (
-				5D6BEC1912FC4AC1825FF9A7 /* Sources */,
-				14363FE015D54233B5846EAB /* Frameworks */,
-				C745013C073D4B57A8582A25 /* Headers */,
+				31987D4A353C4247BACA63C1 /* Sources */,
+				FD08A0D90555461F8E36B3E4 /* Frameworks */,
+				EB2BDB8B3D4B4AA2AA407202 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -338,16 +426,52 @@
 			);
 			name = "Pods-PayPal-iOS-SDK";
 			productName = "Pods-PayPal-iOS-SDK";
-			productReference = 7E6FE3479B324DA59534732A /* libPods-PayPal-iOS-SDK.a */;
+			productReference = 28E031A068EA4A0CA92CD2CF /* libPods-PayPal-iOS-SDK.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		4E2099067F52441380322DC4 /* Pods-FMDB */ = {
+		68811A9029B941AAA94588F8 /* Pods-BButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5E6A58D1DB842AB8FBB5148 /* Build configuration list for PBXNativeTarget "Pods-FMDB" */;
+			buildConfigurationList = FE8341C161484651B99ACD29 /* Build configuration list for PBXNativeTarget "Pods-BButton" */;
 			buildPhases = (
-				23DB4F247F5F42F99B163F48 /* Sources */,
-				9B6C1895801A4CAFB89554ED /* Frameworks */,
-				C44D1D8E4F864F07B7138FFC /* Headers */,
+				9479DB8F60D7484D8C62451D /* Sources */,
+				2B8A59463CD0406F8EA79D1C /* Frameworks */,
+				3F67917457524AE8B62B9AC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BButton";
+			productName = "Pods-BButton";
+			productReference = 2788504639694ABF80D0799C /* libPods-BButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		73066886D3C64F73AA21E6D7 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883EA7D3B5984EB893CAAB09 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				97B1906C1E014261B205C7C7 /* Sources */,
+				06988154DB1342528DE60361 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D47AED18FC4615896808AB /* PBXTargetDependency */,
+				348A3EF5FF5B4B8C847250F3 /* PBXTargetDependency */,
+				EEEE5F8FB3CA4D6E834BF1A5 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = EB3B7158005B4E1289B33390 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A73B2495EC1A40559E84E4F4 /* Pods-FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9820455DCEB46B797F018B2 /* Build configuration list for PBXNativeTarget "Pods-FMDB" */;
+			buildPhases = (
+				F6081EA88EC6431FAE382C7F /* Sources */,
+				079F027569054645B79A43DA /* Frameworks */,
+				CC46BD25143640BE92D5A2EA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -355,166 +479,106 @@
 			);
 			name = "Pods-FMDB";
 			productName = "Pods-FMDB";
-			productReference = 8FD7FD08824A479896F0A137 /* libPods-FMDB.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DA9DC55BF3304743B8D0A86D /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEBF8C29FC8F454A9B8BED8B /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				FCF7C75AA17A47948A79078E /* Sources */,
-				D1CE90056BF5445088453191 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F8331B5AEC104C69859717AB /* PBXTargetDependency */,
-				984E0007851247F8B3294398 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 32F7D9BC523846519CBBD2EE /* libPods.a */;
+			productReference = 48A747CE92944FADB804D842 /* libPods-FMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0B6C1DCD429348A6818314BE /* Project object */ = {
+		2CBFB742494A475B914223E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 443C09890EF9414A8399CD18 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = D0533B1152D04EA29ACCDA5A /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C62E6BAAF1304F1786559B02;
-			productRefGroup = 73101E01237F43189F941F58 /* Products */;
+			mainGroup = 611F5CE4D6DF45D68EF38CB4;
+			productRefGroup = 3A193384748040928019C1C8 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 			);
 			projectRoot = "";
 			targets = (
-				DA9DC55BF3304743B8D0A86D /* Pods */,
-				4E2099067F52441380322DC4 /* Pods-FMDB */,
-				22F6C0101A2E43BBADFE2349 /* Pods-PayPal-iOS-SDK */,
+				73066886D3C64F73AA21E6D7 /* Pods */,
+				68811A9029B941AAA94588F8 /* Pods-BButton */,
+				A73B2495EC1A40559E84E4F4 /* Pods-FMDB */,
+				22837A8446294AD1861E6AD8 /* Pods-PayPal-iOS-SDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23DB4F247F5F42F99B163F48 /* Sources */ = {
+		31987D4A353C4247BACA63C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA5D4DDD2EA4ED0B32D7D12 /* FMDatabase.m in Sources */,
-				7E92CCFD8B9D473E932BE7C7 /* FMDatabaseAdditions.m in Sources */,
-				47D2A304C53948F89B9EC3EC /* FMDatabasePool.m in Sources */,
-				DAE451C3E7E248BB9BA6DD3E /* FMDatabaseQueue.m in Sources */,
-				B0503D63307B420E81D81EB9 /* FMResultSet.m in Sources */,
-				5324AF88EBF04BF2B621F0C1 /* Pods-FMDB-dummy.m in Sources */,
+				8534DB5D867C4FCC92F948B7 /* Pods-PayPal-iOS-SDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D6BEC1912FC4AC1825FF9A7 /* Sources */ = {
+		9479DB8F60D7484D8C62451D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E369DA6846443BBA33B60C3 /* Pods-PayPal-iOS-SDK-dummy.m in Sources */,
+				622C406D5E134139927B60AE /* BButton.m in Sources */,
+				8B9566BBE69C4934BA8C30F0 /* NSString+FontAwesome.m in Sources */,
+				DFA51FB3348742A19B868EF7 /* Pods-BButton-dummy.m in Sources */,
+				2B2D6802E10D402A82F9C118 /* UIColor+BButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCF7C75AA17A47948A79078E /* Sources */ = {
+		97B1906C1E014261B205C7C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3610B70BDC084FF0A0AA2287 /* Pods-dummy.m in Sources */,
+				8D68E4EC0C734E6CAC5691D3 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6081EA88EC6431FAE382C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACD1D8361634796BEAF8EB9 /* FMDatabase.m in Sources */,
+				B97B92A604314664851F5E72 /* FMDatabaseAdditions.m in Sources */,
+				CE97B5C59687442880F5FB5C /* FMDatabasePool.m in Sources */,
+				CCA499C807FB44BF9E940B8A /* FMDatabaseQueue.m in Sources */,
+				9A1948B9783242C683750EBB /* FMResultSet.m in Sources */,
+				B376A0CC5A1E4C51B0292739 /* Pods-FMDB-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		984E0007851247F8B3294398 /* PBXTargetDependency */ = {
+		348A3EF5FF5B4B8C847250F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 22F6C0101A2E43BBADFE2349 /* Pods-PayPal-iOS-SDK */;
-			targetProxy = 2F0920D3B08E4B7CA8F43DFD /* PBXContainerItemProxy */;
+			target = A73B2495EC1A40559E84E4F4 /* Pods-FMDB */;
+			targetProxy = AC9D4D3AC9D641AABD475E49 /* PBXContainerItemProxy */;
 		};
-		F8331B5AEC104C69859717AB /* PBXTargetDependency */ = {
+		EEEE5F8FB3CA4D6E834BF1A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4E2099067F52441380322DC4 /* Pods-FMDB */;
-			targetProxy = 72E7AA90D8304EEE81948270 /* PBXContainerItemProxy */;
+			target = 22837A8446294AD1861E6AD8 /* Pods-PayPal-iOS-SDK */;
+			targetProxy = 079B70D723124F12A7455B7C /* PBXContainerItemProxy */;
+		};
+		F1D47AED18FC4615896808AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68811A9029B941AAA94588F8 /* Pods-BButton */;
+			targetProxy = 41FC9CAE3F5B4E1487498995 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6913F3E979B3403989DE173C /* Release */ = {
+		0E86D653349D41679E279C23 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59CE615245004EA88A445688 /* Pods.xcconfig */;
+			baseConfigurationReference = E6EF876371A744ECB6782146 /* Pods-PayPal-iOS-SDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6C7EDA72495A4F3BA0A3372E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59CE615245004EA88A445688 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7951F008023A41CF9CE16ABC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17B38E3D136F464990DC5DEC /* Pods-PayPal-iOS-SDK-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -540,7 +604,65 @@
 			};
 			name = Release;
 		};
-		7FE89BC8205349AA90CC8553 /* Debug */ = {
+		169332C9819549CAA58BDD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D355A0E2384B32A2CABEDF /* Pods-BButton-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-BButton-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F664A81AB64401088C05C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5742B02939348049E692F16 /* Pods-FMDB-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-FMDB-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4A09DFD09F8E47D39990D5AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -576,70 +698,11 @@
 			};
 			name = Debug;
 		};
-		B46F62D569A247B8AB8C06FE /* Debug */ = {
+		4CBDE277841140CAAD75058C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17B38E3D136F464990DC5DEC /* Pods-PayPal-iOS-SDK-Private.xcconfig */;
+			baseConfigurationReference = E5742B02939348049E692F16 /* Pods-FMDB-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-PayPal-iOS-SDK-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F0A0EA082CDD42B18951DFDE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B763A0F77B6444988985B16D /* Pods-FMDB-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-FMDB-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F54D30FA820A4998AA250D1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B763A0F77B6444988985B16D /* Pods-FMDB-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -665,7 +728,7 @@
 			};
 			name = Release;
 		};
-		F5DA34F6257B4120904E35E1 /* Release */ = {
+		83B37C8D2DF44930B2253224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -695,46 +758,167 @@
 			};
 			name = Release;
 		};
+		BB51FE2791644AE7A7A17488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECF3EF67DE740DCB0D71325 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2863FBF96574318993CAE6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EF876371A744ECB6782146 /* Pods-PayPal-iOS-SDK-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-PayPal-iOS-SDK-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8DAA21C397B478EB4BD1212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECF3EF67DE740DCB0D71325 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F42657082FC54FD9801CE370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D355A0E2384B32A2CABEDF /* Pods-BButton-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-BButton-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		443C09890EF9414A8399CD18 /* Build configuration list for PBXProject "Pods" */ = {
+		883EA7D3B5984EB893CAAB09 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FE89BC8205349AA90CC8553 /* Debug */,
-				F5DA34F6257B4120904E35E1 /* Release */,
+				E8DAA21C397B478EB4BD1212 /* Debug */,
+				BB51FE2791644AE7A7A17488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A7C77D8FF4042438B4975C6 /* Build configuration list for PBXNativeTarget "Pods-PayPal-iOS-SDK" */ = {
+		B9820455DCEB46B797F018B2 /* Build configuration list for PBXNativeTarget "Pods-FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B46F62D569A247B8AB8C06FE /* Debug */,
-				7951F008023A41CF9CE16ABC /* Release */,
+				3F664A81AB64401088C05C3B /* Debug */,
+				4CBDE277841140CAAD75058C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5E6A58D1DB842AB8FBB5148 /* Build configuration list for PBXNativeTarget "Pods-FMDB" */ = {
+		C9DA5D98134B4E6E900FF671 /* Build configuration list for PBXNativeTarget "Pods-PayPal-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0A0EA082CDD42B18951DFDE /* Debug */,
-				F54D30FA820A4998AA250D1B /* Release */,
+				E2863FBF96574318993CAE6D /* Debug */,
+				0E86D653349D41679E279C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEBF8C29FC8F454A9B8BED8B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		D0533B1152D04EA29ACCDA5A /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C7EDA72495A4F3BA0A3372E /* Debug */,
-				6913F3E979B3403989DE173C /* Release */,
+				4A09DFD09F8E47D39990D5AC /* Debug */,
+				83B37C8D2DF44930B2253224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8341C161484651B99ACD29 /* Build configuration list for PBXNativeTarget "Pods-BButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42657082FC54FD9801CE370 /* Debug */,
+				169332C9819549CAA58BDD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0B6C1DCD429348A6818314BE /* Project object */;
+	rootObject = 2CBFB742494A475B914223E6 /* Project object */;
 }

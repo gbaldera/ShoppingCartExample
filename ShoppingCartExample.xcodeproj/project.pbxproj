@@ -37,6 +37,8 @@
 		B762BD3F712829462E44C936 /* shopping_cart_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = B762B0106C46B1906C218FA1 /* shopping_cart_empty.png */; };
 		B762BDEF42FABA8B1F03C7AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B762B1A7F24B65172DFFD7F4 /* InfoPlist.strings */; };
 		B762BEC7489933D89CC6DCFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B762B38EF7D9B76BB97B0CA7 /* CoreGraphics.framework */; };
+		DFE9C9E0193A491F0009BF88 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE9C9DF193A491F0009BF88 /* ProductCell.xib */; };
+		DFE9C9E3193A4B970009BF88 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9C9E2193A4B970009BF88 /* ProductCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,9 @@
 		B762BED056986EF1F4B8A8E1 /* ShoppingCartExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ShoppingCartExample-Info.plist"; sourceTree = "<group>"; };
 		B762BEE9743277E77086278F /* filled_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filled_box@2x.png"; sourceTree = "<group>"; };
 		B762BFC5C0096A1B819D2345 /* tblack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tblack.jpg; sourceTree = "<group>"; };
+		DFE9C9DF193A491F0009BF88 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		DFE9C9E1193A4B970009BF88 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		DFE9C9E2193A4B970009BF88 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		FA6095CA143C426FB5A6A608 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD24802991EE4C73A5FF072F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +130,9 @@
 				B762B46D6B170F3C2122CCE1 /* ProductsViewController.h */,
 				B762B0D1089732CC11D613C9 /* ProductsViewController.m */,
 				B762B827AC34F8A7C3A1947B /* ProductsViewController.xib */,
+				DFE9C9DF193A491F0009BF88 /* ProductCell.xib */,
+				DFE9C9E1193A4B970009BF88 /* ProductCell.h */,
+				DFE9C9E2193A4B970009BF88 /* ProductCell.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,6 +308,7 @@
 		B762BAB660F042E04BF3F7F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jose Gustavo Rodriguez Baldera";
 			};
 			buildConfigurationList = B762B51ECD132DEC0FF8F3AA /* Build configuration list for PBXProject "ShoppingCartExample" */;
@@ -312,8 +321,6 @@
 			mainGroup = B762B23A5A78F25B812B0111;
 			productRefGroup = B762B1C12DA6BA1210FD9E89 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				B762B8C5651E33F172DA64DE /* ShoppingCartExample */,
@@ -327,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE9C9E0193A491F0009BF88 /* ProductCell.xib in Resources */,
 				B762BA55F0215E5EF5EFED29 /* InfoPlist.strings in Resources */,
 				B762BC793362404535FC918D /* Images.xcassets in Resources */,
 				B762BA48044F2BAE6F50E21E /* ProductsViewController.xib in Resources */,
@@ -403,6 +411,7 @@
 				B762B7536DA1C74B115AAF17 /* Cart.m in Sources */,
 				B762B841C7C219F9D69167D3 /* Product.m in Sources */,
 				B762B378C36C48641C2FFCC9 /* ProductsViewController.m in Sources */,
+				DFE9C9E3193A4B970009BF88 /* ProductCell.m in Sources */,
 				B762B92FE8360EAEB9573855 /* Constants.m in Sources */,
 				B762B8C3650E86D968942317 /* CartItem.m in Sources */,
 				B762BB41A632FE18BE7E76E4 /* Db.m in Sources */,
@@ -443,7 +452,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -536,7 +544,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -581,6 +588,7 @@
 				B762B73DC95A238CD31D3A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B762B51ECD132DEC0FF8F3AA /* Build configuration list for PBXProject "ShoppingCartExample" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +606,7 @@
 				B762BCF46C0C1C7F9B8F5E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

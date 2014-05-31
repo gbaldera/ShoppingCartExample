@@ -1,4 +1,5 @@
 PODS:
+  - BButton (4.0.1)
   - FMDB (2.3):
     - FMDB/standard
   - FMDB/common (2.3)
@@ -7,10 +8,12 @@ PODS:
   - PayPal-iOS-SDK (2.1.0)
 
 DEPENDENCIES:
+  - BButton
   - FMDB
   - PayPal-iOS-SDK
 
 SPEC CHECKSUMS:
+  BButton: 396a5e59648e3f687b7d8201b88ebdbad6e36b59
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   PayPal-iOS-SDK: 198c0d31117ccc1798e263e3bca443b1572ccfce
 

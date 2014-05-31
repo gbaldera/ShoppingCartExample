@@ -8,10 +8,15 @@
 
 #import "ProductsViewController.h"
 #import "Product.h"
+#import "ProductCell.h"
+#import "Cart.h"
+#import "AppDelegate.h"
 
 @interface ProductsViewController ()
 
 @property (strong, nonatomic) NSMutableArray *products;
+
+- (void)addToCart:(UIButton *)sender;
 
 @end
 
@@ -62,20 +67,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"ProductCell";
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ProductCell *cell = (ProductCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ProductCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
 
     Product *product = [self.products objectAtIndex:[indexPath row]];
     
     // Configure the cell...
-    cell.imageView.image = [UIImage imageNamed:product.image];
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    cell.textLabel.text = product.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"$%f", product.price];
+    cell.productImage.image = [UIImage imageNamed:product.image];
+    cell.productImage.contentMode = UIViewContentModeScaleAspectFit;
+    cell.productTitle.text = product.name;
+
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setMaximumFractionDigits:2];
+    [formatter setRoundingMode: NSNumberFormatterRoundDown];
+    cell.productPrice.text = [NSString stringWithFormat:@"$%@", [formatter stringFromNumber:[NSNumber numberWithDouble:product.price]]];
+
+    [cell.addToCartButton addTarget:self action:@selector(addToCart:) forControlEvents:UIControlEventTouchUpInside];
+    cell.addToCartButton.tag = [indexPath row];
 
     return cell;
 }
@@ -85,6 +99,20 @@
     self.products = [Product listProducts];
 
     [self.tableView reloadData];
+}
+
+- (void)addToCart:(UIButton *)button
+{
+    Product *product = [self.products objectAtIndex:button.tag];
+    BOOL success = [Cart addProduct:product];
+
+    if(success)
+    {
+        [(AppDelegate *)[[UIApplication sharedApplication] delegate] updateCartTabBadge];
+
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Add Product" message:@"Product added to cart" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 
 

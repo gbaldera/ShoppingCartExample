@@ -119,6 +119,8 @@
     cartTab.title = @"Cart";
     cartTab.tag = 2;
     cartTab.image = [UIImage imageNamed:@"shopping_cart_empty.png"];
+
+    [self updateCartTabBadge];
 }
 
 - (void)updateCartTabBadge
