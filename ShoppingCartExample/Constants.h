@@ -4,3 +4,5 @@
 //
 
 extern NSString *const kDatabaseName;
+extern NSString *const kPayPalEnvironmentProduction;
+extern NSString *const kPayPalEnvironmentSandbox;

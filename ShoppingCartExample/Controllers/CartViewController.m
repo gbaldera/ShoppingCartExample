@@ -63,8 +63,8 @@
     [super viewWillAppear:animated];
 
     [PayPalMobile initializeWithClientIdsForEnvironments:
-            @{PayPalEnvironmentProduction : @"AXfbHRB-O4BX_SKaUG6I9onihqeJW-xsq3jSfYNQrqxavHRBoveHzkXrSU4H",
-        PayPalEnvironmentSandbox : @"AXfbHRB-O4BX_SKaUG6I9onihqeJW-xsq3jSfYNQrqxavHRBoveHzkXrSU4H"}];
+            @{PayPalEnvironmentProduction : kPayPalEnvironmentProduction,
+                    PayPalEnvironmentSandbox : kPayPalEnvironmentSandbox}];
 
     // Start out working with the test environment! When you are ready, switch to PayPalEnvironmentProduction.
     [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentNoNetwork];

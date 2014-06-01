@@ -17,7 +17,7 @@ If you are new to **CocoaPods**, I recommend this [explanation](http://nshipster
 - [Paypal iOS SDK](https://github.com/paypal/PayPal-iOS-SDK)
 
 ### Icons
-The icons used here area from [Icons8](http://icons8.com/free-ios-7-icons-in-vector/).
+The icons used here are from [Icons8](http://icons8.com/free-ios-7-icons-in-vector/).
 
 ### Products
 The products images are from [Trust Me, I'm An Engineer Campaign](http://teespring.com/engineermemes) on **Teespring**.
