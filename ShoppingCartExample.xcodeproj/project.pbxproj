@@ -15,6 +15,7 @@
 		B762B445DF533DC73D50BCB5 /* ShoppingCartExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B762BE82EE4792BF08CAB605 /* ShoppingCartExampleTests.m */; };
 		B762B4EE5E19AA4458366991 /* tblue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B762B7FC6072E1C519687B95 /* tblue.jpg */; };
 		B762B5B6A0E5CBA548603AFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B762BDE764E5557D08183081 /* Foundation.framework */; };
+		B762B62957E7DC3841B79D55 /* ProductCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B762B16344FB61D51963052C /* ProductCartCell.m */; };
 		B762B65E148E53A7DE136397 /* tgreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B762B73ABC4509DC9B3D1929 /* tgreen.jpg */; };
 		B762B68BA9881956C9C16ED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B762BE7C005494F14C81AB00 /* AppDelegate.m */; };
 		B762B7536DA1C74B115AAF17 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = B762B463709A33CBF33B9984 /* Cart.m */; };
@@ -38,9 +39,12 @@
 		B762BBD4856A923B215DB2BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B762B016086CC5A9A105E0F3 /* SystemConfiguration.framework */; };
 		B762BC793362404535FC918D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B762B98B2B5CBB66AD42EC94 /* Images.xcassets */; };
 		B762BD3F712829462E44C936 /* shopping_cart_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = B762B0106C46B1906C218FA1 /* shopping_cart_empty.png */; };
+		B762BD9C3C59D83BF97EB388 /* ProductCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B762BECAF698D48782DB15A1 /* ProductCartCell.xib */; };
 		B762BDEF42FABA8B1F03C7AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B762B1A7F24B65172DFFD7F4 /* InfoPlist.strings */; };
 		B762BEC7489933D89CC6DCFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B762B38EF7D9B76BB97B0CA7 /* CoreGraphics.framework */; };
 		B762BFF05ACE6C5E67387BE4 /* CheckoutHeaderview.m in Sources */ = {isa = PBXBuildFile; fileRef = B762BA9261CF9363B51D34C4 /* CheckoutHeaderview.m */; };
+		DF2D5127193B4A58007A4520 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D5125193B4A58007A4520 /* CartViewController.m */; };
+		DF2D5128193B4A58007A4520 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2D5126193B4A58007A4520 /* CartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,7 @@
 		B762B0218E9EBFBB38A4BB4E /* shopping_cart_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping_cart_empty@2x.png"; sourceTree = "<group>"; };
 		B762B0D1089732CC11D613C9 /* ProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsViewController.m; sourceTree = "<group>"; };
 		B762B142331CE246267E93FD /* ShoppingCartExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ShoppingCartExampleTests-Info.plist"; sourceTree = "<group>"; };
+		B762B16344FB61D51963052C /* ProductCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCartCell.m; sourceTree = "<group>"; };
 		B762B22CC555C2BA8ADA1BB4 /* Db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Db.h; sourceTree = "<group>"; };
 		B762B2F8F1CDA22046CA7FBF /* CheckoutHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutHeaderView.xib; sourceTree = "<group>"; };
 		B762B34D19BB3A642CC4EA87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 		B762B885F26D00E090259EE4 /* ShoppingCartExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShoppingCartExample-Prefix.pch"; sourceTree = "<group>"; };
 		B762B8B5724381A0E73C3520 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		B762B93A79F248C31D910EAB /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		B762B978577D76F522ADB614 /* ProductCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCartCell.h; sourceTree = "<group>"; };
 		B762B98B2B5CBB66AD42EC94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B762BA9261CF9363B51D34C4 /* CheckoutHeaderview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutHeaderview.m; sourceTree = "<group>"; };
 		B762BAF0B760662DB2C33012 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
@@ -96,9 +102,13 @@
 		B762BDE764E5557D08183081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B762BE7C005494F14C81AB00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B762BE82EE4792BF08CAB605 /* ShoppingCartExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartExampleTests.m; sourceTree = "<group>"; };
+		B762BECAF698D48782DB15A1 /* ProductCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCartCell.xib; sourceTree = "<group>"; };
 		B762BED056986EF1F4B8A8E1 /* ShoppingCartExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ShoppingCartExample-Info.plist"; sourceTree = "<group>"; };
 		B762BEE9743277E77086278F /* filled_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filled_box@2x.png"; sourceTree = "<group>"; };
 		B762BFC5C0096A1B819D2345 /* tblack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tblack.jpg; sourceTree = "<group>"; };
+		DF2D5124193B4A58007A4520 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		DF2D5125193B4A58007A4520 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		DF2D5126193B4A58007A4520 /* CartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
 		FA6095CA143C426FB5A6A608 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD24802991EE4C73A5FF072F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +145,9 @@
 				B762B46D6B170F3C2122CCE1 /* ProductsViewController.h */,
 				B762B0D1089732CC11D613C9 /* ProductsViewController.m */,
 				B762B827AC34F8A7C3A1947B /* ProductsViewController.xib */,
+				DF2D5124193B4A58007A4520 /* CartViewController.h */,
+				DF2D5125193B4A58007A4520 /* CartViewController.m */,
+				DF2D5126193B4A58007A4520 /* CartViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,6 +189,9 @@
 				B762B7829EABC74432548A32 /* ProductCell.xib */,
 				B762BA9261CF9363B51D34C4 /* CheckoutHeaderview.m */,
 				B762B2F8F1CDA22046CA7FBF /* CheckoutHeaderView.xib */,
+				B762BECAF698D48782DB15A1 /* ProductCartCell.xib */,
+				B762B978577D76F522ADB614 /* ProductCartCell.h */,
+				B762B16344FB61D51963052C /* ProductCartCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -358,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2D5128193B4A58007A4520 /* CartViewController.xib in Resources */,
 				B762BA55F0215E5EF5EFED29 /* InfoPlist.strings in Resources */,
 				B762BC793362404535FC918D /* Images.xcassets in Resources */,
 				B762BA48044F2BAE6F50E21E /* ProductsViewController.xib in Resources */,
@@ -372,6 +389,7 @@
 				B762B9EC9A16E4B6CEB021FE /* shopping_cart_empty@2x.png in Resources */,
 				B762B95FD0CC9783B2D4AAE2 /* ProductCell.xib in Resources */,
 				B762B8B19C265CC9DCE62DB6 /* CheckoutHeaderView.xib in Resources */,
+				B762BD9C3C59D83BF97EB388 /* ProductCartCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,12 +453,14 @@
 				B762B68BA9881956C9C16ED6 /* AppDelegate.m in Sources */,
 				B762B7536DA1C74B115AAF17 /* Cart.m in Sources */,
 				B762B841C7C219F9D69167D3 /* Product.m in Sources */,
+				DF2D5127193B4A58007A4520 /* CartViewController.m in Sources */,
 				B762B378C36C48641C2FFCC9 /* ProductsViewController.m in Sources */,
 				B762B92FE8360EAEB9573855 /* Constants.m in Sources */,
 				B762B8C3650E86D968942317 /* CartItem.m in Sources */,
 				B762BB41A632FE18BE7E76E4 /* Db.m in Sources */,
 				B762B8549271E24943335F40 /* ProductCell.m in Sources */,
 				B762BFF05ACE6C5E67387BE4 /* CheckoutHeaderview.m in Sources */,
+				B762B62957E7DC3841B79D55 /* ProductCartCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@
 #import "ProductCell.h"
 #import "Cart.h"
 #import "AppDelegate.h"
-#import "CheckoutHeaderview.h"
+#import "CartViewController.h"
 
 @interface ProductsViewController ()
 
@@ -22,8 +22,6 @@
 @end
 
 @implementation ProductsViewController
-
-@synthesize products = _products;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -95,29 +93,6 @@
     return cell;
 }
 
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CheckoutHeaderView" owner:self options:nil];
-    CheckoutHeaderview *checkoutHeaderview = [nib objectAtIndex:0];
-
-    checkoutHeaderview.subtotal.text = [NSString stringWithFormat:@"Subtotal (%d):", [Cart totalProducts]];
-
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setMaximumFractionDigits:2];
-    [formatter setRoundingMode: NSNumberFormatterRoundDown];
-    checkoutHeaderview.total.text = [NSString stringWithFormat:@"$%@", [formatter stringFromNumber:[NSNumber numberWithDouble:[Cart totalAmount]]]];
-
-    [checkoutHeaderview.checkoutButton setStyle:BButtonStyleBootstrapV3];
-    [checkoutHeaderview.checkoutButton setType:BButtonTypeWarning];
-
-    return checkoutHeaderview;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 70.0f;
-}
-
 - (void)loadProducts
 {
     self.products = [Product listProducts];
@@ -133,6 +108,11 @@
     if(success)
     {
         [(AppDelegate *)[[UIApplication sharedApplication] delegate] updateCartTabBadge];
+
+        // reload cart items
+        UINavigationController *cartNavController = (UINavigationController *)[self.tabBarController.viewControllers objectAtIndex:1];
+        CartViewController *cartViewController = (CartViewController *)[cartNavController.viewControllers objectAtIndex:0];
+        [cartViewController loadItems];
 
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Add Product" message:@"Product added to cart" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];

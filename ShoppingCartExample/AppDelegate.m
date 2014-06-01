@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ProductsViewController.h"
+#import "CartViewController.h"
 #import "Cart.h"
 
 @implementation AppDelegate
@@ -26,7 +27,7 @@
     UINavigationController *productsViewController = [[UINavigationController alloc]
             initWithRootViewController:[[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil]];
     UINavigationController *cartViewController = [[UINavigationController alloc]
-            initWithRootViewController:[[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil]];
+            initWithRootViewController:[[CartViewController alloc] initWithNibName:@"CartViewController" bundle:nil]];
     NSArray *tabControllers = [NSArray arrayWithObjects:productsViewController, cartViewController, nil];
 
     self.tabBarController = [[UITabBarController alloc]init];
