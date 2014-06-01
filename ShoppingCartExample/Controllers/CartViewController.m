@@ -12,13 +12,27 @@
 #import "Cart.h"
 #import "CartItem.h"
 #import "AppDelegate.h"
+#import "PayPalMobile.h"
 
 @interface CartViewController ()
 @property (strong, nonatomic) NSMutableArray *items;
+@property (strong, nonatomic, readwrite) PayPalConfiguration *payPalConfiguration;
+
 -(void) deleteProduct:(UIButton *)button;
+-(void) checkout:(UIButton *)button;
+-(void) verifyCompletedPayment:(PayPalPayment *)completedPayment;
 @end
 
 @implementation CartViewController
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _payPalConfiguration = [[PayPalConfiguration alloc] init];
+    }
+    return self;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -42,6 +56,18 @@
     self.navigationItem.title = @"Cart";
 
     [self loadItems];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    [PayPalMobile initializeWithClientIdsForEnvironments:
+            @{PayPalEnvironmentProduction : @"AXfbHRB-O4BX_SKaUG6I9onihqeJW-xsq3jSfYNQrqxavHRBoveHzkXrSU4H",
+        PayPalEnvironmentSandbox : @"AXfbHRB-O4BX_SKaUG6I9onihqeJW-xsq3jSfYNQrqxavHRBoveHzkXrSU4H"}];
+
+    // Start out working with the test environment! When you are ready, switch to PayPalEnvironmentProduction.
+    [PayPalMobile preconnectWithEnvironment:PayPalEnvironmentNoNetwork];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,8 +131,7 @@
     [formatter setRoundingMode: NSNumberFormatterRoundDown];
     checkoutHeaderview.total.text = [NSString stringWithFormat:@"$%@", [formatter stringFromNumber:[NSNumber numberWithDouble:[Cart totalAmount]]]];
 
-    [checkoutHeaderview.checkoutButton setStyle:BButtonStyleBootstrapV3];
-    [checkoutHeaderview.checkoutButton setType:BButtonTypeWarning];
+    [checkoutHeaderview.checkoutButton addTarget:self action:@selector(checkout:) forControlEvents:UIControlEventTouchUpInside];
 
     return checkoutHeaderview;
 }
@@ -115,6 +140,8 @@
 {
     return 70.0f;
 }
+
+#pragma mark - Utilities methods
 
 - (void)loadItems
 {
@@ -141,6 +168,91 @@
         [(AppDelegate *)[[UIApplication sharedApplication] delegate] updateCartTabBadge];
     }
 }
+
+- (void)checkout:(UIButton *)button
+{
+    // Create a PayPalPayment
+    PayPalPayment *payment = [[PayPalPayment alloc] init];
+
+    // Amount, currency, and description
+    payment.amount = [NSDecimalNumber decimalNumberWithDecimal:[[NSNumber numberWithDouble:[Cart totalAmount]] decimalValue]];
+    payment.currencyCode = @"USD";
+    payment.shortDescription = @"Cool T-Shirts";
+
+    // Use the intent property to indicate that this is a "sale" payment,
+    // meaning combined Authorization + Capture. To perform Authorization only,
+    // and defer Capture to your server, use PayPalPaymentIntentAuthorize.
+    payment.intent = PayPalPaymentIntentSale;
+
+    // Check whether payment is processable.
+    if (!payment.processable) {
+        // If, for example, the amount was negative or the shortDescription was empty, then
+        // this payment would not be processable. You would want to handle that here.
+
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment not processable"
+                                                            message:@"The payment is not processable"
+                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+
+        return;
+    }
+
+    // Create a PayPalPaymentViewController.
+    PayPalPaymentViewController *paymentViewController;
+    paymentViewController = [[PayPalPaymentViewController alloc] initWithPayment:payment
+                                                                   configuration:self.payPalConfiguration
+                                                                        delegate:self];
+
+    // Present the PayPalPaymentViewController.
+    [self.navigationController presentViewController:paymentViewController animated:YES completion:nil];
+}
+
+- (void)verifyCompletedPayment:(PayPalPayment *)completedPayment
+{
+    // Send the entire confirmation dictionary
+    NSData *confirmation = [NSJSONSerialization dataWithJSONObject:completedPayment.confirmation
+                                                           options:0
+                                                             error:nil];
+
+    // Send confirmation to your server; your server should verify the proof of payment
+    // and give the user their goods or services. If the server is not reachable, save
+    // the confirmation and try again later.
+}
+
+
+#pragma mark - PayPalPayment Delegate
+
+- (void)payPalPaymentDidCancel:(PayPalPaymentViewController *)paymentViewController
+{
+    // The payment was canceled; dismiss the PayPalPaymentViewController.
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment cancelled" message:@"The payment was cancelled"
+                                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+}
+
+- (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController
+                 didCompletePayment:(PayPalPayment *)completedPayment
+{
+    // Payment was processed successfully; send to server for verification and fulfillment.
+    [self verifyCompletedPayment:completedPayment];
+
+    // clear cart
+    [Cart clearCart];
+    [self.items removeAllObjects];
+    [self.tableView reloadData];
+
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] updateCartTabBadge];
+
+    // Dismiss the PayPalPaymentViewController.
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment made" message:@"The payment was successfully made"
+                                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+}
+
 
 
 

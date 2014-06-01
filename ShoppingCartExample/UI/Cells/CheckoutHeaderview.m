@@ -20,6 +20,12 @@
     return self;
 }
 
+-(void)awakeFromNib
+{
+    [self.checkoutButton setStyle:BButtonStyleBootstrapV3];
+    [self.checkoutButton setType:BButtonTypeWarning];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

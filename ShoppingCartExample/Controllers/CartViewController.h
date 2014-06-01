@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Jose Gustavo Rodriguez Baldera. All rights reserved.
 //
 
-@interface CartViewController : UITableViewController
+#import "PayPalPaymentViewController.h"
+
+@interface CartViewController : UITableViewController<PayPalPaymentDelegate>
+- (instancetype)initWithCoder:(NSCoder *)aDecoder;
 - (void)loadItems;
 @end
