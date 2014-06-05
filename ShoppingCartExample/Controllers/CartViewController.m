@@ -53,6 +53,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductCartCell" bundle:nil] forCellReuseIdentifier:@"ProductCartCell"];
+
     self.navigationItem.title = @"Cart";
 
     [self loadItems];
@@ -93,11 +95,6 @@
     static NSString *CellIdentifier = @"ProductCartCell";
 
     ProductCartCell *cell = (ProductCartCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ProductCartCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
 
     CartItem *item = [self.items objectAtIndex:[indexPath row]];
     

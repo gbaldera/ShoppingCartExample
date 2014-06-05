@@ -38,6 +38,8 @@
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+
+    [self.tableView registerNib:[UINib nibWithNibName:@"ProductCell" bundle:nil] forCellReuseIdentifier:@"ProductCell"];
  
     self.navigationItem.title = @"Products";
 
@@ -69,11 +71,6 @@
     static NSString *CellIdentifier = @"ProductCell";
 
     ProductCell *cell = (ProductCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-    if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ProductCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
 
     Product *product = [self.products objectAtIndex:[indexPath row]];
     
